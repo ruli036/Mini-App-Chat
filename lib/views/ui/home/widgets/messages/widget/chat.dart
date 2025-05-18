@@ -17,7 +17,7 @@ class ChatPage extends StatelessWidget {
       child: Consumer<MessagesState>(
         builder: (context, state, child) {
           return Scaffold(
-            appBar: AppBar(title: Text(state.chatting?.name ?? "-")),
+            appBar: AppBar(title: Text(state.chatting?.name ?? "-"), backgroundColor: styleMiniChat.colors.background.base,),
             body: SafeArea(
               child: Column(
                 children: [
